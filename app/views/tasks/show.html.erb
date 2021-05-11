@@ -1,0 +1,12 @@
+<body>
+  <div class="container">
+    <h2><%= @task.title %></h2>
+    <p><%= @task.details %></p>
+    <p><%= @task.completed ? "[x] The task is completed" : "[ ] The task is not completed yet" %></p>
+    <div>
+      <%= link_to "Edit task", edit_task_path, class: "btn btn-success" %>
+    </div>
+    <hr>
+    <%= link_to "Back to list", tasks_path %>
+  </div>
+</body>
